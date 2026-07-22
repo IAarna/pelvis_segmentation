@@ -1,0 +1,15 @@
+def extract_features(image, mask):
+    
+    area = np.sum(mask)
+    
+    mean_intensity = np.mean(image[mask])
+    
+    max_intensity = np.max(image[mask])
+    
+    features = {
+        "Area": area,
+        "Mean Intensity": round(mean_intensity, 3),
+        "Maximum Intensity": round(max_intensity, 3)
+    }
+    
+    return features
