@@ -1,0 +1,6 @@
+Step 2: Preprocessing
+def preprocess(image):
+
+    image (image image.min()) / (image.max() image.min())
+
+return image
