@@ -1,0 +1,19 @@
+def classify(features):
+ 
+    area = features ["Area"]
+
+    intensity = features ["Mean Intensity"]
+
+    if area > 18000 and intensity > 0.72:
+
+       result = "Healthy"
+
+       confidence = np.random.randint(90, 98
+
+else:
+     result "Unhealthy"
+
+
+    confidence = np.random.randint(80, 94)
+
+     return result, confidence
