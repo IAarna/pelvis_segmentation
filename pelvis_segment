@@ -1,0 +1,7 @@
+def segment_pelvis(image):
+    
+    threshold = 0.60
+    
+    mask = image > threshold
+    
+    return mask
